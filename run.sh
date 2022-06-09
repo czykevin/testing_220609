@@ -1,2 +1,1 @@
-# install requirement.txt
-pip install -r requirements.txt
+echo "The job was automatically triggered by"
