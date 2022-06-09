@@ -5,7 +5,8 @@ jobs:
   run-pipeline:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "$PWD"
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: Install dependencies
         run: bash ./run.sh
       - name: Done
