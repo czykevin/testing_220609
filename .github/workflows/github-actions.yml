@@ -6,9 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+        run: bash ./run.sh
       - name: Done
         run: |
           echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
